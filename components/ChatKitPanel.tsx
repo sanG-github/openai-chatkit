@@ -341,16 +341,16 @@ export function ChatKitPanel({
         payload?: Record<string, unknown>;
       }, item?: unknown) => {
         console.info("[ChatKitPanel] widget action received", {
-          action,
-          item,
+          actionType: action.type,
+          actionPayload: action.payload,
         });
 
-        if (action.type === "cart.add" && action.payload?.selected_product_id) {
+        if (action.type === "cart.add" && action.payload?.id) {
           await onWidgetAction({
             type: "cart.add",
-            selectedProductId: action.payload.selected_product_id as string,
-            payload: action.payload,
+            selectedProductId: action.payload.id as string,
           });
+          return;
         }
 
         // Handle other action types here

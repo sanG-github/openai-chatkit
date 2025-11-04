@@ -1,114 +1,133 @@
 {
   "products": [
     {
+      "id": "1",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Pro_Metabolic.jpg?v=1740556725",
       "name": "Pro Metabolic",
       "price": "$49.99",
       "subtitle": "Metabolism Support"
     },
     {
+      "id": "2",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Pro_Collagen_Peach_6ac7f234-4685-4354-881f-b54d1308fd52.jpg?v=1755269782",
       "name": "Pro Collagen",
       "price": "$54.99",
       "subtitle": "Skin & Joint Health"
     },
     {
+      "id": "3",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/multivitamin_category_eb7587dd-191e-48fc-8561-b182b8b0a524.jpg?v=1754048926",
       "name": "Multivitamin",
       "price": "$29.99",
       "subtitle": "Daily Vitality"
     },
     {
+      "id": "4",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Menopause_49595262-9403-4ee5-be91-031d24492204.jpg?v=1703774056",
       "name": "Menopause",
       "price": "$39.99",
       "subtitle": "Hormone Balance"
     },
     {
+      "id": "5",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/hair_support.jpg?v=1693916031",
       "name": "Hair Loss Support",
       "price": "$44.99",
       "subtitle": "Thicker Hair"
     },
     {
+      "id": "6",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/smooth_skin.jpg?v=1730274796",
       "name": "Smooth Skin",
       "price": "$34.99",
       "subtitle": "Clear Complexion"
     },
     {
+      "id": "7",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/collagen-sachet.jpg?v=1727164741",
       "name": "Pro Collagen Watermelon",
       "price": "$54.99",
       "subtitle": "Watermelon Collagen"
     },
     {
+      "id": "8",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Pro_Collagen_Pineapple_0dced840-f4bc-4276-8ead-cd3e0100a805.jpg?v=1755269889",
       "name": "Pro Collagen Pineapple",
       "price": "$54.99",
       "subtitle": "Pineapple Collagen"
     },
     {
+      "id": "9",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/collagen-gels.jpg?v=1693914297",
       "name": "Pro Collagen Gel Cherry",
       "price": "$59.99",
       "subtitle": "Cherry Collagen Gel"
     },
     {
+      "id": "10",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/collagen-gels-tropical.jpg?v=1757602587",
       "name": "Pro Collagen Gel Tropical",
       "price": "$59.99",
       "subtitle": "Tropical Collagen Gel"
     },
     {
+      "id": "11",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/collagen-gels-watermelon.jpg?v=1721133659",
       "name": "Pro Collagen Gel Watermelon",
       "price": "$59.99",
       "subtitle": "Watermelon Collagen Gel"
     },
     {
+      "id": "12",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/pro_collagen_type_2_mango.jpg?v=1758806550",
       "name": "Pro Collagen Type 2 for Joints Mango Vanilla",
       "price": "$49.99",
       "subtitle": "Joint Comfort"
     },
     {
+      "id": "13",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/pro_collagen_type_2_watermelon.jpg?v=1758806609",
       "name": "Pro Collagen Type 2 for Joints Watermelon",
       "price": "$49.99",
       "subtitle": "Joint Mobility"
     },
     {
+      "id": "14",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Probiotic.jpg?v=1700564788",
       "name": "Beauty Probiotic+",
       "price": "$36.99",
       "subtitle": "Gut & Glow"
     },
     {
+      "id": "15",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/beauty-gummies_1c93333c-e22b-4fba-9fe4-462361fb0685.jpg?v=1718615869",
       "name": "Beauty Gummies",
       "price": "$25.99",
       "subtitle": "Tasty Skin Vitamins"
     },
     {
+      "id": "16",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Omega_3_72fa66cd-598d-47a4-9e9b-d63eb11c6d9a.jpg?v=1718370183",
       "name": "Omega 3 (Vegan)",
       "price": "$32.99",
       "subtitle": "Plant-Based Omega"
     },
     {
+      "id": "17",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/pro-meno.jpg?v=1738326282",
       "name": "Pro Menopause",
       "price": "$42.99",
       "subtitle": "Advanced Menopause Relief"
     },
     {
+      "id": "18",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/Natural_magnesium.jpg?v=1721133752",
       "name": "Natural Magnesium + Calcium",
       "price": "$27.99",
       "subtitle": "Bone & Muscle Support"
     },
     {
+      "id": "19",
       "image": "https://cdn.shopify.com/s/files/1/0024/7123/1534/files/focus-category.jpg?v=1756464168",
       "name": "Focus",
       "price": "$35.99",

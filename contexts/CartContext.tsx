@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
 
 export interface Product {
   image: string;
@@ -27,7 +27,31 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: ReactNode }) {
-  const [cart, setCart] = useState<CartItem[]>([]);
+  const STORAGE_KEY = "cart:items:v1";
+
+  // Initialize from localStorage (browser-only). Fallback to empty cart on any error.
+  const [cart, setCart] = useState<CartItem[]>(() => {
+    if (typeof window === "undefined") return [];
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      if (!raw) return [];
+      const parsed = JSON.parse(raw) as CartItem[];
+      if (!Array.isArray(parsed)) return [];
+      return parsed;
+    } catch (_) {
+      return [];
+    }
+  });
+
+  // Persist to localStorage whenever the cart changes (browser-only)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+    } catch (_) {
+      // Ignore quota or serialization errors
+    }
+  }, [cart]);
 
   const addToCart = useCallback((product: Product) => {
     setCart((prevCart) => {

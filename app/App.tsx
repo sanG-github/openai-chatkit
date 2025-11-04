@@ -18,13 +18,11 @@ function AppContent() {
 
   const handleWidgetAction = useCallback(
     async (action: FactAction) => {
-      if (process.env.NODE_ENV !== "production") {
-        console.info("[App] widget action", action);
-      }
+      console.info("[App] widget action", action);
 
       if (action.type === "cart.add") {
         const product = productsData.products.find(
-          (p, index) => `${index}` === action.selectedProductId || p.name === action.selectedProductId
+          (p) => p.id === action.selectedProductId
         );
 
         if (product) {
