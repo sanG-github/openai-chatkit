@@ -32,17 +32,17 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   return (
     <ToastContext.Provider value={value}>
       {children}
-      <div className="fixed top-4 right-4 z-[60] space-y-2">
+      <div className="fixed top-6 right-6 z-[80] space-y-3">
         {toasts.map((toast) => (
           <div
             key={toast.id}
             className={
-              "min-w-[240px] max-w-[360px] rounded-lg shadow-lg px-4 py-3 text-sm border " +
+              "min-w-[320px] max-w-[520px] rounded-xl shadow-2xl px-5 py-4 text-base font-medium border-0 ring-1 ring-black/5 " +
               (toast.type === "success"
-                ? "bg-emerald-50 border-emerald-200 text-emerald-900 dark:bg-emerald-900/20 dark:border-emerald-800 dark:text-emerald-100"
+                ? "bg-emerald-600 text-white dark:bg-emerald-500"
                 : toast.type === "error"
-                ? "bg-rose-50 border-rose-200 text-rose-900 dark:bg-rose-900/20 dark:border-rose-800 dark:text-rose-100"
-                : "bg-slate-50 border-slate-200 text-slate-900 dark:bg-slate-800/60 dark:border-slate-700 dark:text-slate-100")
+                ? "bg-rose-600 text-white dark:bg-rose-500"
+                : "bg-slate-700 text-white dark:bg-slate-600")
             }
           >
             {toast.message}
