@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "image": "https://picsum.photos/seed/aurora/300",
+      "name": "Aurora Smart Lamp",
+      "price": "$39.99",
+      "subtitle": "Mood lighting"
+    },
+    {
+      "image": "https://picsum.photos/seed/nimbus/300",
+      "name": "Nimbus Wireless Earbuds",
+      "price": "$59.99",
+      "subtitle": "Crystal sound"
+    },
+    {
+      "image": "https://picsum.photos/seed/orbit/300",
+      "name": "Orbit Fitness Tracker",
+      "price": "$89.99",
+      "subtitle": "Activity monitor"
+    },
+    {
+      "image": "https://picsum.photos/seed/cielo/300",
+      "name": "Cielo Mini Projector",
+      "price": "$129.99",
+      "subtitle": "Compact cinema"
+    },
+    {
+      "image": "https://picsum.photos/seed/solace/300",
+      "name": "Solace Bluetooth Speaker",
+      "price": "$49.99",
+      "subtitle": "Deep bass"
+    },
+    {
+      "image": "https://picsum.photos/seed/zenith/300",
+      "name": "Zenith Mechanical Keyboard",
+      "price": "$79.99",
+      "subtitle": "Tactile feedback"
+    },
+    {
+      "image": "https://picsum.photos/seed/breeze/300",
+      "name": "Breeze Air Purifier",
+      "price": "$99.99",
+      "subtitle": "Fresh air"
+    },
+    {
+      "image": "https://picsum.photos/seed/pulse/300",
+      "name": "Pulse Smartwatch",
+      "price": "$139.99",
+      "subtitle": "Health insights"
+    },
+    {
+      "image": "https://picsum.photos/seed/echo/300",
+      "name": "Echo Thermal Bottle",
+      "price": "$24.99",
+      "subtitle": "Keeps warm"
+    },
+    {
+      "image": "https://picsum.photos/seed/halo/300",
+      "name": "Halo Portable Charger",
+      "price": "$29.99",
+      "subtitle": "Quick charge"
+    },
+    {
+      "image": "https://picsum.photos/seed/nova/300",
+      "name": "Nova VR Headset",
+      "price": "$299.99",
+      "subtitle": "Immersive worlds"
+    },
+    {
+      "image": "https://picsum.photos/seed/ember/300",
+      "name": "Ember Smart Mug",
+      "price": "$129.99",
+      "subtitle": "Perfect temperature"
+    },
+    {
+      "image": "https://picsum.photos/seed/terra/300",
+      "name": "Terra Smart Garden",
+      "price": "$149.99",
+      "subtitle": "Grow indoors"
+    },
+    {
+      "image": "https://picsum.photos/seed/apex/300",
+      "name": "Apex Gaming Mouse",
+      "price": "$69.99",
+      "subtitle": "Precision tracking"
+    },
+    {
+      "image": "https://picsum.photos/seed/luna/300",
+      "name": "Luna Sleep Mask",
+      "price": "$49.99",
+      "subtitle": "Sound & light block"
+    },
+    {
+      "image": "https://picsum.photos/seed/strata/300",
+      "name": "Strata Digital Photo Frame",
+      "price": "$119.99",
+      "subtitle": "WiFi enabled"
+    },
+    {
+      "image": "https://picsum.photos/seed/cascade/300",
+      "name": "Cascade Water Bottle",
+      "price": "$34.99",
+      "subtitle": "UV sanitizing"
+    },
+    {
+      "image": "https://picsum.photos/seed/rift/300",
+      "name": "Rift Electric Skateboard",
+      "price": "$499.99",
+      "subtitle": "Urban mobility"
+    },
+    {
+      "image": "https://picsum.photos/seed/kinetix/300",
+      "name": "Kinetix Massage Gun",
+      "price": "$89.99",
+      "subtitle": "Deep tissue relief"
+    },
+    {
+      "image": "https://picsum.photos/seed/vesper/300",
+      "name": "Vesper Smart Lock",
+      "price": "$199.99",
+      "subtitle": "Keyless entry"
+    }
+  ]
+}

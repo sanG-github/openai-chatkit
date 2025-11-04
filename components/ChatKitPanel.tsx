@@ -13,11 +13,17 @@ import {
 import { ErrorOverlay } from "./ErrorOverlay";
 import type { ColorScheme } from "@/hooks/useColorScheme";
 
-export type FactAction = {
-  type: "save";
-  factId: string;
-  factText: string;
-};
+export type FactAction = 
+  | {
+      type: "save";
+      factId: string;
+      factText: string;
+    }
+  | {
+      type: "cart.add";
+      selectedProductId: string;
+      payload?: Record<string, unknown>;
+    };
 
 type ChatKitPanelProps = {
   theme: ColorScheme;
@@ -253,7 +259,8 @@ export function ChatKitPanel({
         }
         throw error instanceof Error ? error : new Error(detail);
       } finally {
-        if (isMountedRef.current && !currentSecret) {
+        if (isMountedRef.current) {
+          // Always end initializing state, even when ChatKit passed an existing secret.
           setIsInitializingSession(false);
         }
       }
@@ -328,7 +335,41 @@ export function ChatKitPanel({
       // Thus, your app code doesn't need to display errors on UI.
       console.error("ChatKit error", error);
     },
+    widgets: {
+      onAction: async (action: {
+        type: string;
+        payload?: Record<string, unknown>;
+      }, item?: unknown) => {
+        console.info("[ChatKitPanel] widget action received", {
+          action,
+          item,
+        });
+
+        if (action.type === "cart.add" && action.payload?.selected_product_id) {
+          await onWidgetAction({
+            type: "cart.add",
+            selectedProductId: action.payload.selected_product_id as string,
+            payload: action.payload,
+          });
+        }
+
+        // Handle other action types here
+        if (isDev) {
+          console.debug("[ChatKitPanel] unhandled widget action", {
+            type: action.type,
+            payload: action.payload,
+          });
+        }
+      },
+    },
   });
+
+  // Safety: if ChatKit control is available, ensure initialization overlay is cleared
+  useEffect(() => {
+    if (isMountedRef.current && chatkit?.control) {
+      setIsInitializingSession(false);
+    }
+  }, [chatkit?.control]);
 
   const activeError = errors.session ?? errors.integration;
   const blockingError = errors.script ?? activeError;
@@ -344,7 +385,7 @@ export function ChatKitPanel({
   }
 
   return (
-    <div className="relative pb-8 flex h-[90vh] w-full rounded-2xl flex-col overflow-hidden bg-white shadow-sm transition-colors dark:bg-slate-900">
+    <div className="relative pb-8 flex h-full w-full rounded-2xl flex-col overflow-hidden bg-white shadow-sm transition-colors dark:bg-slate-900">
       <ChatKit
         key={widgetInstanceKey}
         control={chatkit.control}
